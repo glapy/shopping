@@ -1,0 +1,451 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?rehtsp');
+    src: url('../fonts/icomoon.eot?rehtsp#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?rehtsp') format('truetype'), url('../fonts/icomoon.woff?rehtsp') format('woff'), url('../fonts/icomoon.svg?rehtsp#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 980px;
+    height: 455px;
+    margin: 10px 0 0 220px;
+}
+
+.main .focus {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 455px;
+    overflow: hidden;
+}
+
+.main .focus span {
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: 15px;
+    height: 20px;
+    line-height: 17px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 999;
+    cursor: pointer;
+}
+
+.main .focus span:nth-child(1) {
+    left: 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.main .focus span:nth-child(2) {
+    right: 0;
+    border-radius: 8px 0 0 8px;
+}
+
+.main .focus ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+}
+
+.main .focus ul li {
+    float: left;
+}
+
+.main .focus ol {
+    position: absolute;
+    left: 50px;
+    bottom: 10px;
+}
+
+.main .focus ol li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(230, 230, 230);
+    margin-right: 10px;
+}
+
+.current {
+    background-color: #fff;
+}
+
+.main .newflash {
+    float: right;
+    width: 249px;
+    height: 100%;
+}
+
+.newflash .news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.news .nt {
+    height: 34px;
+    line-height: 34px;
+    padding: 0 15px;
+    border-bottom: 1px dotted #e8e8e7;
+}
+
+.news .nt .nt_title {
+    float: left;
+    font-size: 14px;
+    font-family: '微软雅黑';
+    color: #333333;
+}
+
+.news .nt .nt_more {
+    float: right;
+}
+
+.news .nt .nt_more::after {
+    content: '\e915';
+    font-family: 'icomoon';
+}
+
+.news .nb {
+    height: 131px;
+    padding: 12px 15px 0;
+}
+
+.news .nb ul li {
+    margin-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.news .nb ul li a span {
+    font-weight: 700;
+    padding-right: 5px;
+}
+
+.newflash .lifeservice {
+    height: 210px;
+    /* background-color: purple; */
+}
+
+.lifeservice ul {
+    height: 210px;
+    border-left: 1px solid #e4e4e4;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 62px;
+    height: 70px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    border-left: 0;
+    text-align: center;
+}
+
+.lifeservice ul li a i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/icons.png) -17px -16px;
+    margin-top: 15px;
+}
+
+.lifeservice ul li:nth-child(2) {
+    position: relative;
+}
+
+.lifeservice ul li:nth-child(2) a div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 15px;
+    background-color: #589d5a;
+}
+
+.lifeservice ul li:nth-child(2) a div span {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    font-size: 12px;
+    color: #fff;
+}
+
+.lifeservice ul li:nth-child(2) a>span {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px;
+    border-color: transparent transparent white transparent;
+}
+
+.newflash .bargain {
+    height: 75px;
+    background: url(../upload/bargain.png) no-repeat;
+    margin-top: 4px;
+}
+
+.recommend {
+    height: 163px;
+    margin-top: 11px;
+}
+
+.recommend .rl {
+    float: left;
+    width: 206px;
+    height: 163px;
+    background-color: #5c5251;
+}
+
+.recommend .rl p {
+    font-size: 18px;
+    font-family: '微软雅黑';
+    color: #fff;
+    text-align: center;
+}
+
+.recommend .rl p::before {
+    display: block;
+    content: '\e92b';
+    font-size: 60px;
+    font-family: 'icomoon';
+    margin-top: 16px;
+}
+
+.recommend .rr {
+    float: left;
+    width: 994px;
+    height: 163px;
+    background: url(../upload/recommend.png);
+}
+
+.guess,
+.funny,
+.first_title {
+    margin-top: 20px;
+    height: 38px;
+    line-height: 38px;
+}
+
+.guess h3,
+.funny h3 {
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: '微软雅黑';
+    color: #333;
+}
+
+.guess span {
+    float: right;
+}
+
+.guess span a::after {
+    content: '\e92f';
+    font-family: 'icomoon';
+}
+
+.guess_content {
+    height: 230px;
+    border: 1px solid #ededed;
+}
+
+.guess_content ul li {
+    float: left;
+    width: 199px;
+    height: 230px;
+    overflow: hidden;
+}
+
+.guess_content ul li .img {
+    width: 200px;
+    height: 162px;
+    line-height: 162px;
+    text-align: center;
+    padding: 0 12px;
+}
+
+.guess_content ul li a .content {
+    width: 199px;
+    height: 63px;
+    padding: 0 0 5px 20px;
+    border-right: 1px solid #ededed;
+}
+
+.guess_content ul li:nth-child(6n) a .content {
+    border-right: 0;
+}
+
+.guess_content ul li a h4 {
+    width: 120px;
+    font-size: 12px;
+    font-family: '宋体';
+    font-weight: 400;
+}
+
+.guess_content ul li a p {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.funny_content {
+    height: 405px;
+    border: 1px solid #ededed;
+}
+
+.funny_content ul li {
+    float: left;
+}
+
+.funny_content ul li:nth-child(2) p:nth-child(1),
+.funny_content ul li:nth-child(3) div {
+    padding: 15px 0;
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
+
+.funny_content ul li:nth-child(2) {
+    padding-left: 8px;
+}
+
+.funny_content ul li:nth-child(2) p:nth-child(2) img {
+    width: 221px;
+    height: 146px;
+    margin-top: 10px;
+    border-right: 1px solid #ededed;
+}
+
+.funny_content ul li:nth-child(3) {
+    background-color: #f7f7f7;
+}
+
+.funny_content ul li:nth-child(3) div img {
+    height: 217px;
+}
+
+.funny_content ul li:nth-child(3) span,
+.funny_content ul li:nth-child(3) i {
+    float: left;
+    height: 146px;
+    border-right: 1px solid #ededed;
+}
+
+.funny_content ul li:nth-child(3) span {
+    margin-top: 23px;
+}
+
+.funny_content ul li:nth-child(3) i {
+    margin-top: 18px;
+}
+
+.first_title {
+    border-bottom: 2px solid #c81623;
+}
+
+.first_title h3 {
+    float: left;
+    font-size: 18px;
+    font-family: '微软雅黑';
+    font-weight: 400;
+    color: #c81623;
+}
+
+.first_title ul {
+    float: right;
+    font-size: 12px;
+    font-family: '宋体';
+}
+
+.first_title ul li {
+    float: left;
+}
+
+.first_title ul li a {
+    padding: 0 16px 0 12px;
+}
+
+.first_title ul li:last-child a {
+    padding-right: 6px;
+}
+
+.first_content>div {
+    float: left;
+}
+
+.first_content div ul {
+    width: 210px;
+    height: 100px;
+    padding-left: 12px;
+}
+
+.first_content div ul li {
+    float: left;
+    width: 86px;
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #ededed;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.first_content div p {
+    margin-top: 26px;
+    text-align: center;
+}
+
+.fix {
+    position: fixed;
+    left: 0;
+    top: 200px;
+    display: none;
+    cursor: pointer;
+}
+
+.fix ul {
+    list-style: none;
+    width: 70px;
+    height: 200px;
+}
+
+.fix ul li {
+    width: 70px;
+    height: 50px;
+    background-color: #888;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    border-top: 1px solid #fff;
+}
+
+.click {
+    background-color: #333 !important;
+}
